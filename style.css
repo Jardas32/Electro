@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.count {
+    margin-top: 5px;
+    background-color: rgb(29, 28, 28);
+    color: rgb(231, 231, 231);
+    font-size: 30px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.textContent {
+    background-color: rgb(176, 217, 253);
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.users {
+    position: relative;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    border: 5px solid rgb(184, 179, 179);
+    border-radius: 20px;
+} 
+
+.title {
+    color: rgb(12, 31, 68);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pbody {
+    color: rgb(15, 13, 13);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.userid {
+    color: rgb(199, 202, 221);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btclosed {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: rgb(181, 182, 182);
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+    transition: all .4s;
+}
+
+.btclosed:hover {
+    background-color: rgb(62, 62, 62);
+}
+
+.card {
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.imgcart {
+    width: 120px;
+    height: 110px;
+}
+
+.titlecart {
+    color: rgb(94, 89, 89);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bt {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    transition: all .4s;
+    border: none;
+}
+
+.bt:hover {
+    background-color: rgb(170, 0, 0);
+    color: #ffffff;
+}
+
+.user {
+    background-color: rgb(28, 27, 27);
+    color: #838181;
+    font-size: 14px;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.comments {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    max-width: 570px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 15px;
+}
+
+.name {
+    width: 100%;
+    color: #4c4d53;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.body {
+    width: 100%;
+    color: #8f8d8d;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.email {
+    color:rgb(121, 6, 6);
+    font-size: 16px;
+}
+
+            /* Товары */
+
+.product {
+    background-color: #ffffff;
+    max-width: 550px;
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    border-radius: 10px;
+}
+
+.titlecart {
+    font-size: 22px;
+    color: #838181;
+    font-weight: 600;
+    text-align: center;
+}
+         
+.price {
+    font-size: 18px;
+    color: #700505;
+    font-weight: 600;
+}
+
+.counts {
+    width: 70px;
+    height: 20px;
+    border: 1px solid rgb(177, 177, 177);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.counts span {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanMinus {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid rgb(176, 176, 176);
+}
+
+.spanPlus {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid rgb(176, 176, 176);
+}
+
+.btclos {
+    cursor: pointer;
+    background-color: #d2d3d8;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    transition: all .4s;
+}
+
+.btclos:hover {
+    background-color: #8f8d8d;
+}
+
+               /* Получение товаров */
+
+.newcart {
+    position: relative;
+    background-color: #0f0f0f;
+    max-width: 800px;
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    border-radius: 10px;
+}
+
+.newcart:hover .productImg {
+    animation: rotates 2s alternate infinite;
+}
+
+.productImg {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 3px rgb(251, 251, 251));
+    animation: none;
+}
+
+@keyframes rotates {
+    from {
+        transform: perspective(1000px) scale(1) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(500px) scale(1.2) rotateY(180deg);
+    }
+    to {
+        transform: perspective(1000px) scale(1) rotateY(0deg);
+    }
+}
+
+.title {
+    color: #c8cad1;
+    font-size: 20px;
+}
+
+.price {
+    color: #ae0707;
+}
+
+.quntity {
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quntity input {
+    width: 30px;
+    height: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.quntity span {
+    background-color: #a3a4ac;
+    color: #ffffff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanTitle {
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    color: rgb(239, 232, 232);
+    padding: 6px 22px;
+    font-size: 33px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.spanCounts {
+    background-color: rgb(3, 3, 3);
+    color: #ffffff;
+    padding: 4px 15px;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.closed {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+      
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 511px) {
+
+    .newcart {
+        flex-direction: column;
+        height: auto;
+        row-gap: 5px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .imgcart {
+        width: 90px;
+        height: 90px;
+    }
+
+    .titlecart {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 490px) {
+
+    .counts {
+        width: 50px;
+        height: 15px;
+    }
+
+    .counts span {
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btclos {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    .product {
+        padding: 0 5px;
+    }
+
+    .imgcart {
+        width: 75px;
+        height: 75px;
+    }
+
+    .counts {
+        width: 50px;
+        height: 15px;
+    }
+
+    .counts span {
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btclos {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .product {
+        padding: 0 5px;
+        height: 90px;
+    }
+
+    .imgcart {
+        width: 65px;
+        height: 65px;
+    }
+
+    .titlecart {
+        font-size: 12px;
+    }
+
+    .counts {
+        width: 50px;
+        height: 15px;
+    }
+
+    .counts span {
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btclos {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 390px) {
+     
+    .product {
+        padding: 0 3px;
+        column-gap: 5px;
+    }
+
+    .imgcart {
+        width: 64px;
+        height: 64px;
+    }
+
+    .titlecart {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .counts {
+        width: 50px;
+        height: 15px;
+    }
+
+    .counts span {
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btclos {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 361px) {
+
+    .product {
+        padding: 0 3px;
+        height: 75px;
+    }
+
+    .imgcart {
+        width: 64px;
+        height: 64px;
+    }
+
+    .titlecart {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .counts {
+        width: 50px;
+        height: 15px;
+    }
+
+    .counts span {
+        text-align: center;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btclos {
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .user {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 373px) {
+    .user {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 322px) {
+    .user {
+        font-size: 10px;
+    }
+}
+
+
